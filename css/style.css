@@ -1,0 +1,740 @@
+* {
+  box-sizing: border-box;
+}
+    
+h1 {
+  font-family: calibri, sans-serif;
+  width: 100%;
+  margin: 10px;
+  text-align: center;
+}
+
+.flex-container .item {
+  background-color: #A0A0A0;
+  border: 1px solid black;
+  font-family: calibri, sans-serif;
+  margin: 1rem;
+  overflow: hidden;
+  padding: 1rem;
+}
+.flex-container .item .menu {
+  height: 20px;
+  width: 125px;
+  float: right;
+  border-left: 1px solid black;
+  border-bottom: 1px solid black;
+  text-align: center;
+  color: #000000;
+  font-weight: bold;
+  
+  transform: translate(1rem, -1rem)
+}
+.flex-container .item:nth-child(3n+1) .menu {
+  background-color: #FF66B2;
+}
+.flex-container .item:nth-child(3n+2) .menu {
+  background-color: #990000;
+  color: white;
+}
+.flex-container .item:nth-child(3n+3) .menu {
+  background-color: #FFE5CC;
+}
+
+.flex-container .item > *:nth-child(2) {
+  margin-top: 0;
+}
+.flex-container .item > *:nth-last-child(1) {
+  margin-bottom: 0;
+}
+
+@media (min-width: 768px) {
+  .flex-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .flex-container .item {
+    width: calc(50% - 2rem);
+  }
+  .flex-container .item:nth-child(3n+3) {
+    width: calc(100% - 2rem);
+  }
+}
+@media (min-width:992px) {
+  .flex-container .item,
+  .flex-container .item:nth-child(3n+3){
+    width: calc((100% / 3) - 2rem);
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/** {
+  box-sizing: border-box;
+}
+
+h1 {
+  font-family: calibri, sans-serif;
+  width: 100%;
+  margin: 10px;
+  text-align: center;
+
+}
+
+
+div.container1 {
+  background-color: #A0A0A0;
+  font-family: calibri, sans-serif;
+  width: 400px;
+  border: 1px solid black;
+  float: left;
+  margin: 10px;
+  overflow: hidden;
+}
+
+div.container2 {
+  background-color: #A0A0A0;
+  font-family: calibri, sans-serif;
+  width: 400px;
+  border: 1px solid black;
+  float: left;
+  margin: 10px;
+  overflow: hidden;
+}
+
+div.container3 {
+  background-color: #A0A0A0;
+  font-family: calibri, sans-serif;
+  width: 400px;
+  border: 1px solid black;
+  float: left;
+  margin: 10px;
+  overflow: hidden;  
+}
+
+div#menu1 {
+  font-family: calibri, sans-serif;
+  height: 20px;
+  width: 125px;
+  background-color: #FF66B2;
+  float: right;
+  border-left: 1px solid black;
+  border-bottom: 1px solid black;
+  text-align: center;
+  color: #000000;
+  font-weight: bold;
+}
+
+div#menu2 {
+  font-family: calibri, sans-serif;
+  height: 20px;
+  width: 125px;
+  background-color: #990000;
+  float: right;
+  border-left: 1px solid black;
+  border-bottom: 1px solid black;
+  text-align: center;
+  color: #FFFFFF;
+  font-weight: bold;
+}
+
+div#menu3 {
+  font-family: calibri, sans-serif;
+  height: 20px;
+  width: 125px;
+  background-color: #FFE5CC;
+  float: right;
+  border-left: 1px solid black;
+  border-bottom: 1px solid black;
+  text-align: center;
+  color: #000000;
+  font-weight: bold;
+}
+
+p {
+font-family: calibri, sans-serif;
+margin-left: 10px;
+margin-right: 10px;
+}*/
+
+    /* For tablets and large phones: */
+/*  @media (min-width: 768px) and (max-width: 991px) {
+      background-color: green;
+     .col-m-1 {
+         width: 25%;
+     }
+     .col-m-2 {
+         width: 25%;
+     }
+     .col-m-3 {
+         width: 50%;
+     }
+ }*/
+ 
+      /* For Desktop */
+/* @media only screen and (min-width:992px) {
+     .col-1 {
+         width: 33.33%;
+     }
+     .col-2 {
+         width: 33.33%;
+     }
+     .col-3 {
+         width: 33.33%;
+     }
+ }
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Simple Responsive Framework. */
+/*.row {
+  width: 100%;
+}*/
+
+/********** Large devices only **********/
+/*@media (min-width: 992px) {
+  .col-lg-1, .col-lg-2, .col-lg-3, {
+    float: left;
+   }
+  .col-lg-1 {
+    width: 33.33%;
+  }
+  .col-lg-2 {
+    width: 33.33%;
+  }
+  .col-lg-3 {
+    width: 33.33%;
+  }*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/** {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-family: sans-serif;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+div#container1 {
+  background-color: lightgrey;
+  width: 90%;
+/*  height: 150px;*/
+/*  position: relative;
+  left: 25px;
+  font-family: sans-serif;
+  border: 1px solid black;
+  margin-bottom: 10px;
+}
+
+div#container2 {
+  background-color: lightgrey;
+  width: 90%;
+  height: 150px;
+  position: absolute;
+  left: 25px; 
+  font-family: sans-serif;
+  border: 1px solid black;
+  margin-bottom: 10px;
+  float: right;
+
+}
+
+div#container3 {
+  background-color: lightgrey;
+  width: 90%;
+  height: 150px;
+  position: absolute;
+  left: 25px;
+  font-family: sans-serif;
+  border: 1px solid black;
+ 
+}
+
+p {
+  width: 100px;
+  height: 25px;
+  border-bottom: 1px solid black;
+  border-left: 1px solid black;
+  text-align: center;
+  font-family: sans-serif;
+}
+
+#p1 {
+  background-color: lightsalmon;
+  float: right;
+  padding-top: 3px;
+  margin: 0;
+  font-weight: bold;
+  font-family: sans-serif;
+}
+
+#p2 {
+  width: 100%;
+  height: 50px;
+  font-family: sans-serif;
+  font-size: 14px; 
+  border: none;
+  text-align: left;
+  padding-top: 35px;
+  padding-left: 10px;
+
+}
+
+#p3 {
+  background-color: indianred;
+  float: right;
+  padding-top: 3px;
+  margin: 0;
+  font-weight: bold;
+  font-family: sans-serif;
+}
+
+#p4 {
+  width: 100%;
+  height: 100%;
+  text-align: left;
+  font-family: sans-serif;
+  font-size: 14px; 
+  border: none;
+  padding-top: 35px;
+  padding-left: 10px;
+}
+
+#p5 {
+  background-color: orangered;
+  float: right;
+  padding-top: 3px;
+  margin: 0;
+  font-weight: bold;
+  font-family: sans-serif;
+}
+
+#p6 {
+  width: 100%;
+  height: 100%;
+  text-align: left;
+  font-family: sans-serif;
+  font-size: 14px; 
+  border: none;
+  padding-top: 35px;
+  padding-left: 10px;
+
+}
+
+.row {
+  width: 100%;
+}*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/********** Base styles **********/
+/** {
+  box-sizing: border-box;
+}
+h1 {
+  margin-bottom: 50px;
+  color: black;
+  text-align: center;
+  font-family: Helvetica;
+}
+
+p {
+  font-family: Helvetica;
+  color: black;
+  float: left;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+#box1 {
+  width: 300px;
+  height: 150px;
+  background-color: lightslategray;
+  font-family: Helvetica;
+  color: white;
+  float: left;
+  border: 1px solid black;
+  margin: 10px;
+
+}
+
+#box2 {
+  width: 120px;
+  height: 25px;
+  background-color: lightpink;
+  font-family: Helvetica;
+  font-weight: bold;
+  color: black;
+  float: right;
+  text-align: center;
+  padding-top: 3px;
+  border-bottom: 1px solid black;
+  border-left: 2px solid black;
+
+}
+
+#box3 {
+  width: 300px;
+  height: 150px;
+  background-color: lightslategray;
+  font-family: Helvetica;
+  color: white;
+  float: left;
+  border: 1px solid black;
+  margin: 10px;
+}
+
+#box4 {
+  width: 120px;
+  height: 25px;
+  background-color: red;
+  font-family: Helvetica;
+  font-weight: bold;
+  color: white;
+  float: right;
+  text-align: center;
+  padding-top: 3px;
+  border-bottom: 1px solid black;
+  border-left: 2px solid black;
+}
+
+#box5 {
+  width: 300px;
+  height: 150px;
+  background-color: lightslategray;
+  font-family: Helvetica;
+  color: white;
+  float: left;
+  border: 1px solid black;
+  margin: 10px;
+}
+
+#box6 {
+  width: 120px;
+  height: 25px;
+  background-color: beige;
+  font-family: Helvetica;
+  font-weight: bold;
+  color: black;
+  float: right;
+  text-align: center;
+  padding-top: 3px;
+  border-bottom: 1px solid black;
+  border-left: 1px solid black;
+}*/
+
+/* Simple Responsive Framework. */
+/*.row {
+  width: 100%;
+ }*/
+
+
+/********** Desktop Version **********/
+/*@media (min-width: 992px) {
+  .col-lg-1, .col-lg-2, .col-lg-3, {
+    float: left;
+    border: 1px solid green;
+  }
+  .col-lg-1 {
+    width: 33.33%;
+  }
+  .col-lg-2 {
+    width: 33.33%;
+  }
+  .col-lg-3 {
+    width: 33.33%;
+  }
+
+}*/
+
+/********** Tablet Version **********/
+/*@media (min-width: 768px) and (max-width: 991px) {
+  .col-md-1, .col-md-2, .col-md-3 {
+ float: left;
+    border: 1px solid green;
+  }
+  .col-md-1 {
+    width: 33.33%;
+  }
+  .col-md-2 {
+    width: 33.33%;
+  }
+  .col-md-3 {
+    width: 33.33%;
+  }
+}
+*/
